@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country-State Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        label {
+            font-size: 18px;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Country-State Selection</h2>
+        <label for="country">Select Country:</label>
+        <select id="country" onchange="populateStates()">
+            <option value="">Select a Country</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+        </select>
+        <label for="state">Select State:</label>
+        <select id="state">
+            <option value="">Select a State</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
